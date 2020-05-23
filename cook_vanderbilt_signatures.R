@@ -77,8 +77,8 @@ for (i in seq_along(signature_master_names)){
     if (is_empty(G)){return(g)}
     return(G)
   }))
-  deg_up_sig <- unique(as.character(deg_up_sig))
-  deg_dn_sig <- unique(as.character(deg_dn_sig))
+  deg_up_sig <- sort(unique(as.character(deg_up_sig)))
+  deg_dn_sig <- sort(unique(as.character(deg_dn_sig)))
   cat('UP:', length(deg_up_sig), 'genes with the official gene symbols.\n')
   cat('DN:', length(deg_dn_sig), 'genes with the official gene symbols.\n')
 

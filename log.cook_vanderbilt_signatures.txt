@@ -1,4 +1,4 @@
-##------ Sat May 23 00:06:07 2020 ------##
+##------ Sat May 23 00:24:21 2020 ------##
 ## Processing BL1 ------ 
 205 genes did not pass the qval selection so excluded.
 UP: 221 genes.
