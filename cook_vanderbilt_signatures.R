@@ -10,7 +10,7 @@ suppressPackageStartupMessages(library(magrittr))
 " -> doc_help
 timestamp()
 suppressPackageStartupMessages({
-  library(tidyverse); library(readr); library(fs)
+  library(tidyverse); library(readr); library(fs); library(limma)
 })
 
 
@@ -65,6 +65,21 @@ for (i in seq_along(signature_master_names)){
               'genes are reported up-and down-regulated in the same time:'))
     cat(intersect(deg_up_sig, deg_dn_sig), '\n')
   }
+
+  deg_up_sig <- sapply(deg_up_sig, function(g){
+    G <- limma::alias2Symbol(g, species = "Hs")
+    if (is_empty(G)){return(g)} ## character(0)
+    return(G)
+  })
+  deg_dn_sig <- sapply(deg_dn_sig, function(g){
+    G <- limma::alias2Symbol(g, species = "Hs")
+    if (is_empty(G)){return(g)}
+    return(G)
+  })
+  deg_up_sig <- unique(as.character(deg_up_sig))
+  deg_dn_sig <- unique(as.character(deg_dn_sig))
+  cat('UP:', length(deg_up_sig), 'genes with the official gene symbols.\n')
+  cat('DN:', length(deg_dn_sig), 'genes with the official gene symbols.\n')
 
   text_up <- paste(sprintf('%s_plus', signature_master_names[i]),
                    sprintf('%s significantly up regulated', signature_master_names[i]),
