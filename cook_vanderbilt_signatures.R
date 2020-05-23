@@ -66,16 +66,17 @@ for (i in seq_along(signature_master_names)){
     cat(intersect(deg_up_sig, deg_dn_sig), '\n')
   }
 
-  deg_up_sig <- sapply(deg_up_sig, function(g){
+  # C11orf2 has two individual gene names IFT46, VPS51.
+  deg_up_sig <- unlist(lapply(deg_up_sig, function(g){
     G <- limma::alias2Symbol(g, species = "Hs")
     if (is_empty(G)){return(g)} ## character(0)
     return(G)
-  })
-  deg_dn_sig <- sapply(deg_dn_sig, function(g){
+  }))
+  deg_dn_sig <- unlist(lapply(deg_dn_sig, function(g){
     G <- limma::alias2Symbol(g, species = "Hs")
     if (is_empty(G)){return(g)}
     return(G)
-  })
+  }))
   deg_up_sig <- unique(as.character(deg_up_sig))
   deg_dn_sig <- unique(as.character(deg_dn_sig))
   cat('UP:', length(deg_up_sig), 'genes with the official gene symbols.\n')
