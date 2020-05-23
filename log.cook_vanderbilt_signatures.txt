@@ -1,0 +1,34 @@
+##------ Fri May 22 21:51:18 2020 ------##
+## Processing BL1 ------ 
+205 genes did not pass the qval selection so excluded.
+UP: 221 genes.
+DN: 252 genes.
+
+## Processing BL2 ------ 
+148 genes did not pass the qval selection so excluded.
+UP: 158 genes.
+DN: 133 genes.
+
+## Processing IM ------ 
+224 genes did not pass the qval selection so excluded.
+UP: 549 genes.
+DN: 452 genes.
+[warn] The original author must make mistakes because  148 genes are reported up-and down-regulated in the same time:UBD BATF FGL2 TRAC GBP1 CSF2RB IFI30 CXCL13 SEMA4D SP140 TRIM22 EN1 CD52 CTSS DOCK2 CCR5 LAMP3 BTN3A3 EVI2A EVI2B IFI44L CLIC2 CORO1A ADAMDEC1 CXCR6 HCP5 BTN3A1 FYB SAMHD1 TFEC AIF1 LILRB1 TNFAIP8 SMPDL3A IGLJ3 CCR2 CYBB LOC100130100 CCDC69 IGKV1D-13 KLRK1 USP18 GNLY CCR7 FCER1G GBP2 IFI44 PLCL2 GCH1 ALOX5AP ALOX5 GPR18 IGSF6 CTSC BTN2A2 LY96 BTN3A2 DDX58 P2RY5 MAT2B CSF1R STAP1 PTPN22 SH2B3 IFIT5 CD96 MAP4K1 RFTN1 CKAP2 ADAM28 FGR RASGRP1 DPYD CTSH TRIM38 KIAA0746 CYBA IRF9 FNBP1 CCR1 FCGR1B LILRB4 NR1H3 LOC100133233 PYCARD TMEM176B IGKV4-1 HMHA1 GLUL LILRB2 ALDH2 FCGR1A GABRP CREBL2 SERPINB1 KCTD12 TDRD7 IKZF1 TYMP CDKN2A VAMP5 LAT CTSW CSF2RA FCGR3B FPR3 PLXNC1 ZNF267 PHF15 LOC100133739 ELF4 APOBEC3F PIM2 ADAM8 APOL2 E2F5 FYN IGLV3-19 CTLA4 CLU APOBEC3A GATA3 IFITM3 FUCA1 SMCHD1 IGHV4-31 HPSE GCA ARAP2 FCGR2B GLRX LOC100133484 TCIRG1 FCGR2A GPR183 APOBEC3C VSIG4 LOC100133862 IFITM2 IGF2BP2 ST6GALNAC4 EGFL6 CSTA OPTN CDH3 IFI6 CUGBP2 FPR1 
+
+## Processing LAR ------ 
+1031 genes did not pass the qval selection so excluded.
+UP: 816 genes.
+DN: 389 genes.
+
+## Processing M ------ 
+146 genes did not pass the qval selection so excluded.
+UP: 252 genes.
+DN: 458 genes.
+
+## Processing MSL ------ 
+1258 genes did not pass the qval selection so excluded.
+UP: 846 genes.
+DN: 261 genes.
+[warn] The original author must make mistakes because  1 genes are reported up-and down-regulated in the same time:KRT17 
+
+2188 genes are involved in the vanderbilt signatures.
