@@ -9,4 +9,4 @@ Use the two files:
 - vanderbilt_tnbc_subtypes_gene_signatures_plus.gmt
 - vanderbilt_tnbc_subtypes_gene_signatures_minus.gmt
 
-The 'plus' and 'minus' postfix are used rather than 'up'/'dn' because of the [vision package](https://yoseflab.github.io/VISION/articles/Signatures.html) so that the signature autocorrelation analysis is ready to do.
+The 'plus' and 'minus' postfix are used rather than 'up'/'dn' because of the [vision package](https://yoseflab.github.io/VISION/articles/Signatures.html#create-your-own--gmt-files) so that the signature autocorrelation analysis is ready to do.
